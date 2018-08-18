@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts/:id'
-
+    post = Post.find(params[:id])
   end
 
   get '/posts/:id/edit' do
