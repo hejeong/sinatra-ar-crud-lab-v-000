@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  post '/posts/:id'
+  patch '/posts/:id'
     puts params
     #Post.update(params)
   end
