@@ -1,7 +1,7 @@
 <form action="/posts/:id" method="post">
   <h2>Edit Post</h2>
   <p>Title: <input type="text" name="name"></p>
-  <p>Content: <input type="text" name="content"></p>
+  <p>Content: <input type="text" name="content" value="#{@post.content}"></p>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input id="submit" type="submit" value="submit">
 </form>
