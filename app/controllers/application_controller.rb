@@ -32,7 +32,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts/:id'
-    Post.update(params)
+    puts params
+    #Post.update(params)
   end
 
   get '/posts/:id/edit' do
