@@ -1,4 +1,6 @@
-<% @posts.each do |post| %>
-<h3><%= post.name %></h3>
-<h5><%= post.content %></h5>
+<% if !@posts.empty? %>
+  <% @posts.each do |post| %>
+    <h3><%= post.name %></h3>
+    <h5><%= post.content %></h5>
+  <% end %>
 <% end %>
