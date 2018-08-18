@@ -2,7 +2,6 @@
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <h2>Edit Post</h2>
   <p>Title: <input type="text" name="name" value="<%= @post.name %>"</p>
-  <p>Content: <input type="text" name="content" value=""></p>
-  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <p>Content: <input type="text" name="content" value="<%= @post.content"></p>
   <input id="submit" type="submit" value="submit">
 </form>
